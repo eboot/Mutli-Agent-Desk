@@ -512,6 +512,7 @@ document.getElementById('input').addEventListener('keydown', (e) => {
 });
 document.getElementById('btn-cancel').onclick = () => window.agentDesk.cancelAll().then(() => setWaiting(false));
 document.getElementById('btn-konektor').onclick = openKonektorModal;
+document.getElementById('btn-settings').onclick = () => openSettings();
 document.getElementById('search').addEventListener('input', (e) => renderSidebar(e.target.value));
 document.getElementById('btn-add-agent').onclick = () => openAgentModal();
 document.getElementById('btn-edit-agent').onclick = () => openAgentModal(agentById(activeId));
