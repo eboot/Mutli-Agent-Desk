@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AgentDesk</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+  <div id="titlebar">AgentDesk</div>
+  <div id="main">
+    <aside id="sidebar">
+      <div class="search-wrap">
+        <input id="search" type="text" placeholder="🔍 Cari agen...">
+      </div>
+      <div id="agent-list"></div>
+      <div class="sidebar-footer">
+        <button id="btn-add-agent" class="btn ghost">+ Agen baru</button>
+        <button id="btn-konektor" class="btn ghost">🔗 Konektor</button>
+        <button id="btn-settings" class="btn ghost">⚙ Pengaturan</button>
+      </div>
+    </aside>
+    <section id="chat-panel">
+      <header id="chat-header">
+        <div class="agent-title">
+          <span id="header-avatar" class="avatar"></span>
+          <span id="header-name">—</span>
+        </div>
+        <div class="header-actions">
+          <button id="btn-edit-agent" class="btn small">✏️ Edit</button>
+          <button id="btn-del-agent" class="btn small danger">🗑️</button>
+        </div>
+      </header>
+      <div id="messages"></div>
+      <div id="typing" class="hidden">⏳ <span id="typing-text">Menunggu jawaban...</span></div>
+      <div id="queue-note" class="hidden"></div>
+      <footer id="composer">
+        <textarea id="input" rows="2" placeholder="Tulis pesan untuk agen ini... (Enter = kirim, Shift+Enter = baris baru)"></textarea>
+        <div class="composer-actions">
+          <button id="btn-cancel" class="btn small hidden">⏹ Batal</button>
+          <button id="btn-send" class="btn primary">Kirim ➤</button>
+        </div>
+      </footer>
+    </section>
+  </div>
+</div>
+
+<div id="modal-root"></div>
+<script src="app.js"></script>
+</body>
+</html>

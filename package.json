@@ -1,0 +1,1 @@
+{"description":"AgentDesk — desktop multi-agent chat di atas 9Router + muse-bridge","devDependencies":{"electron":"^33.0.0","electron-packager":"^17.1.2"},"main":"main.js","name":"agentdesk","scripts":{"dist":"electron-packager . AgentDesk --platform=win32 --arch=x64 --out=dist --overwrite --icon=assets/icon.ico","start":"electron ."},"version":"1.0.0"}
