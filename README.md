@@ -9,7 +9,7 @@ dan agen-agen **bisa saling berkirim pesan** — bahkan antar-perangkat.
 2. Jalankan `AgentDesk.exe`
 3. Buka **⚙ Pengaturan**, isi:
    - Base URL: `http://127.0.0.1:20128` (bila 9Router jalan di mesin yang sama;
-     pakai `https://kabe9router.pages.dev` bila 9Router di mesin lain via tunnel)
+     pakai `https://url.pages.dev` bila 9Router di mesin lain via tunnel)
    - API key: API key 9Router kamu (hanya tersimpan di PC ini)
    - Model: `muse-spark`
 4. Klik **🔌 Tes koneksi** — harus ✅
